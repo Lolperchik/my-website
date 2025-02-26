@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo {
+    color: #91115e;
+    font-size: 140px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #8f105c, 0 0 30px #8f105c, 0 0 60px #8f105c, 0 0 90px #8f105c;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.full-width-line {
+    border: 0;
+    height: 2px;
+    background-color: #212021;
+    width: 100%;
+}
+
+.bottom-right-button {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 20px; /* Отступ от нижнего края страницы */
+    right: 20px; /* Отступ от правого края */
+    padding: 12px 24px; /* Внутренние отступы */
+    background-color: #ff00ff; /* Розовый цвет */
+    color: white; /* Белый текст */
+    font-size: 16px; /* Размер шрифта */
+    border: none; /* Убираем границу */
+    border-radius: 8px; /* Закруглённые углы */
+    cursor: pointer; /* Курсор при наведении */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8); /* Свечение */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.bottom-right-button:hover {
+    background-color: #d400d4; /* Темнее при наведении */
+    box-shadow: 0 0 20px rgba(212, 0, 212, 1);
+}
+
+.dropdown-menu {
+    position: absolute;
+    bottom: 70px; /* Отступ от кнопки */
+    right: 20px;
+    background-color: #333;
+    color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    display: none; /* Скрыт по умолчанию */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #555;
+}
+
+.show {
+    display: block; /* Показываем список */
+}
+
+.content {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Стили для блоков "О нас" и "Контакты" */
+.about-contact {
+  display: flex; /* Используем flex для разметки */
+  justify-content: space-between; /* Пространство между колонками */
+  gap: 20px; /* Отступы между колонками */
+  margin: 20px;
+}
+
+.about-contact .about, .about-contact .contact {
+  width: 45%; /* Каждая колонка занимает 45% ширины */
+  padding: 10px;
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.about-contact h2 {
+  font-size: 24px;
+  color: #91115e;
+}
+
+.about-contact p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
